@@ -461,6 +461,10 @@ nav ul{ display: flex; text-align: center;
 }
 
 /* For Contact section */
+.make-center {
+    display: flex;
+    justify-content: center;
+}
 .contact-section-container {
     display: flex;
     justify-content: center;
