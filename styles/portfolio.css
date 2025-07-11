@@ -107,13 +107,13 @@ background-color:rgb(211, 239, 239);
   font-size:50px ;
 }
 
-.contact-text {
-    flex: 1;
+.footer-text {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
+    padding: 0px 40px;
     background-color: #fff; 
 }
 
@@ -124,14 +124,17 @@ background-color:rgb(211, 239, 239);
     line-height: 1.1;
 }
 
-.contact-form {
+.contact-form { display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
     flex: 1;
     padding: 40px;
     background-color: #fff;
     border-left: 1px solid #eee; 
 }
 
-.form-group {
+.form-text {
     margin-bottom: 20px;
 }
 
@@ -172,7 +175,28 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #3a60d0; 
 }
+.parent-container {
+    background-color: lightsalmon;
+    padding: 20px;
 
+    /* Use flexbox to arrange the child elements horizontally */
+    display: flex;
+    justify-content: center;
+    /* Center the children within the parent */
+    gap: 40px;
+
+    width: 80%;
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 50px auto;
+}
+
+.child-box {
+    background-color: blue;
+
+    width: 300px;
+    height: 300px;
+}
 /* Ritu test */
 
 .card-title {
@@ -232,10 +256,10 @@ button[type="submit"]:hover {
         font-size: 2.5em;
     }
 
-    .contact-form {
+    /* .contact-form {
         padding: 30px;
         border-left: none;
-    }
+    } */
 .header-content {
     text-align: center;
     padding: 20px;
@@ -436,5 +460,106 @@ nav ul{ display: flex; text-align: center;
 
 }
 
+/* For Contact section */
+.contact-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+    padding: 0px auto;
+    border-radius: 20px;
+    gap: 80px; /* Space between the heading and the form */
+}
+
+/* --- Left Side: Heading --- */
+.contact-intro {
+    flex: 1; /* Allows the left side to take up available space */
+    max-width: 400px;
+}
+
+.contact-intro h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #212121; /* Dark text color */
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* --- Right Side: Contact Form --- */
+.contact-form-container {
+    flex: 1; /* Allows the form container to take up available space */
+    max-width: 450px;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    padding: 15px 20px;
+    border: 1px solid #e0e0e0; /* Light border color */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4b34c0; /* Focus border color */
+    outline: none;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of the message area */
+}
+
+/* --- Submit Button --- */
+.submit-button {
+    background-color: #5d3dfc; /* Vibrant purple/blue color */
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #4b34c0; /* Slightly darker shade on hover */
+    transform: translateY(-2px);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .contact-section-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .contact-intro h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
 
 
