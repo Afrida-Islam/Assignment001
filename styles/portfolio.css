@@ -7,6 +7,7 @@
 }
 /* Nav styles */
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -14,6 +15,10 @@ nav {
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 60px;
+}
+body {
+  
+  background-color: #F5F8FF;
 }
 .style {
   color: #4e47ff;
@@ -73,9 +78,8 @@ p {
 .container{ 
   position: relative;
 background-color:rgb(211, 239, 239);
-  padding-top:30px;
-  padding-bottom: 50px;
-  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-radius:20px; 
   text-align: center;
  
@@ -294,6 +298,10 @@ body {
     line-height: 1.5;
 }
 
+}
+
+.focus-section {
+    padding: 10px 70px;
 }
 
 /* --- General Section Styling (from previous response, included for completeness) --- */
