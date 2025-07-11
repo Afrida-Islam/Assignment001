@@ -1,0 +1,395 @@
+.open-sans-<uniquifier > {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 99px;
+  font-style: 51px;
+  font-variation-settings: "wdth" 100;
+}
+/* Nav styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 60px;
+}
+.style {
+  color: #4e47ff;
+}
+.button {
+  color: white;
+  background-color: #4e47ff;
+  border: none;
+  border-radius: 3px;
+}
+.body {
+  text-align: center;
+  padding-top: 60px;
+}
+.header {
+  background-image: url(a/asssignment001/B12A01-landing-launchpad/Assets/Hero-bg.png);
+  height: 40vh;
+}
+p {
+  color: #b3b3b3;
+}
+.color {
+  color: #4e47ff;
+}
+.item{
+  flex: 1;
+  min-width: 180px;
+}
+
+.about {
+  /* text-align: center; */
+  font-family: sans-serif;
+  
+  justify-content: center
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* width: 800px;
+  height: 360; */
+
+  background-color: #f7f6ff; /* Light background color for the card */
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+
+}
+.number { 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container{ 
+  position: relative;
+background-color:rgb(211, 239, 239);
+  padding-top:30px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  border-radius:20px; 
+  text-align: center;
+ 
+   width: 100%;
+  justify-content: center;
+  font-family:sans-serif ;
+} 
+.headline{
+  font-size:2.2em ;
+  margin-bottom: 10px;
+} 
+.image{
+  width:403px ;
+  height:328px;
+  border-radius: 20px;
+ 
+}
+.image-2{
+  width: 800px;
+  height: 250px;
+   border-radius: 20px; 
+  
+}
+.size{
+  font-size:50px ;
+}
+
+.contact-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #fff; 
+}
+
+.contact-text h1 {
+    font-size: 3em; 
+    color: #333;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    border-left: 1px solid #eee; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4a7dff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a60d0; 
+}
+
+/* Ritu test */
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #403e5a; /* Darker text color for the title */
+    margin-bottom: 40px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: flex-start;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6e6b8c; /* Lighter text color for the labels */
+}
+
+/* Specific colors for the statistical values */
+.active-users {
+    color: #4b34c0; /* Deep blue/purple color */
+}
+
+/* Ritu test */
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-text {
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid #eee; 
+        border-left: none;
+    }
+
+    .contact-text h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-form {
+        padding: 30px;
+        border-left: none;
+    }
+.header-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 4em;
+    font-weight: bold;
+    color: #0000ff; 
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px; 
+    line-height: 1.5;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #777;
+    font-size: 1em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.tagline {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+}
+.testimonials-section{
+  padding:60px 20px ; 
+  text-align: center;
+  background-color:#f8f8f8 ; 
+  width: 100%;
+  box-sizing: border-box; display: flex;
+}
+.testimonials-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /
+    gap: 30px;
+    max-width: 1200px;
+    padding: 0 20px; 
+
+.testimonial-card {
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    padding: 30px;
+    text-align: left; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.testimonial-card .stars {
+    color: #ffd700; 
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    letter-spacing: 2px; 
+}
+
+.testimonial-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .review-text {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px; 
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;  
+    margin-right: 15px;
+    border: 2px solid #eee; 
+}
+
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #333;
+    margin: 0; 
+}
+nav ul li{
+  list-style:none ; padding: 0;margin:0 ;
+  justify-content: center;
+  
+
+}
+nav li a{ 
+  text-decoration:none ;
+}
+.dark-2{  color: #b3b3b3;}
+nav ul{ display: flex; text-align: center; 
+  gap: 30px;
+  
+} 
+.background{background-color:rgb(211, 239, 239);
+
+
+}
+
+
+
