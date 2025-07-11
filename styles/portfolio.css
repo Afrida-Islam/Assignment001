@@ -30,7 +30,7 @@ nav {
 }
 .header {
   background-image: url(a/asssignment001/B12A01-landing-launchpad/Assets/Hero-bg.png);
-  height: 40vh;
+  height: 48vh;
 }
 p {
   color: #b3b3b3;
@@ -295,71 +295,87 @@ body {
 }
 
 }
-.testimonials-section{
-  padding:60px 20px ; 
-  text-align: center;
-  background-color:#f8f8f8 ; 
-  width: 100%;
-  box-sizing: border-box; display: flex;
+
+/* --- General Section Styling (from previous response, included for completeness) --- */
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; 
+    font-family: Arial, sans-serif;
+    color: #333;
 }
+
 .testimonials-section h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1a202c; 
+    text-align: center;
 }
 
+/* --- Testimonials Grid Layout --- */
 .testimonials-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /
-    gap: 30px;
+    display: grid;
+    gap: 30px; 
     max-width: 1200px;
-    padding: 0 20px; 
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+/* --- Testimonial Card Styling --- */
 .testimonial-card {
-    background-color: #fff; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 30px;
-    text-align: left; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); 
+}
+
+/* --- Star Rating Styling (Crucial Update) --- */
+.stars {
+    /* Use flexbox to align the star images horizontally */
     display: flex; 
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
-.testimonial-card .stars {
-    color: #ffd700; 
-    font-size: 1.5em;
+    gap: 5px; /* Add a small gap between the stars */
     margin-bottom: 15px;
-    letter-spacing: 2px; 
 }
 
+.stars img {
+    /* Ensure the star images are the correct size */
+    width: 20px; 
+    height: auto;
+}
+
+/* --- Other Card Content Styling --- */
 .testimonial-card h3 {
-    font-size: 1.4em;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #4a5568; 
 }
 
-.testimonial-card .review-text {
-    font-size: 1em;
-    color: #555;
+.review-text {
+    font-size: 16px;
+    color: #4a5568;
     line-height: 1.6;
-    margin-bottom: 20px;
-    flex-grow: 1; 
+    margin-bottom: 25px;
 }
 
+/* --- Reviewer Info Styling --- */
 .reviewer-info {
     display: flex;
-    align-items: center; 
-    margin-top: 15px; 
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .reviewer-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;  
-    margin-right: 15px;
-    border: 2px solid #eee; 
+    object-fit: cover;
 }
 
 .reviewer-details {
@@ -368,10 +384,31 @@ body {
 }
 
 .reviewer-name {
-    font-weight: bold;
-    color: #333;
-    margin: 0; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
 }
+
+.review-date {
+    font-size: 14px;
+    color: #718096;
+    margin: 0;
+}
+
+/* --- Responsive Adjustments (from previous response) --- */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 nav ul li{
   list-style:none ; padding: 0;margin:0 ;
   justify-content: center;
